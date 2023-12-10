@@ -7,7 +7,7 @@ models = requests.get(api_url + "/models").json()
 samplers = requests.get(api_url + "/samplers").json()
 loras = requests.get(api_url + "/loras").json()
 
-api_key = "d2882741-7085-416e-ac38-eb1ccbcd09be"
+api_key = "your_api_key"
 
 def generate_image(prompt, negative, model, lora, sampler, cfg_scale, steps):
     lora = lora.to_dict()
